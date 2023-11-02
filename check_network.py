@@ -4,11 +4,10 @@ import time
 #pip install speedtest-cli
 import speedtest
 import logging
-logging.getLogger("scapy.runtime").setLevel(logging.ERROR)#pip install scapy
+logging.getLogger("scapy.runtime").setLevel(logging.ERROR)
 from scapy.all import *
 import threading
-# Use Npcap for packet capture
-#conf.use_pcap = True
+
 #python C:\anti-virus\check_network.py
 
 
