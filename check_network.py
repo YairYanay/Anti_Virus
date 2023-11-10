@@ -19,7 +19,7 @@ def speedtest_networks():
 
 
 def send_network_brodcust_packet(message):
-    udp_brodcust_packet = IP(dst="255.255.255.255", src=get_if_addr(conf.iface)) / TCP(sport=8202) / message
+    udp_brodcust_packet = IP(dst="255.255.255.255", src=get_if_addr(conf.iface)) / UDP(sport=8202) / message
     send(udp_brodcust_packet, verbose=False)
 
 
